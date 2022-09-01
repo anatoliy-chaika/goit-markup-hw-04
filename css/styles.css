@@ -10,6 +10,7 @@
   --header-bd-cl: #ececec;
   --border-potfolio-cl: #eeeeee;
   --bg-hero-grad: rgba(47, 48, 58, 0.4);
+  --icon-cl: #afb1b8;
 }
 body {
   background-color: var(--main-background-color);
@@ -128,6 +129,24 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.item .cotact-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.telphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .cotact-link:hover,
 .cotact-link:focus {
   color: var(--accent-color);
@@ -142,6 +161,7 @@ ul {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   max-width: 1600px;
+  min-height: 600px;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
@@ -181,6 +201,22 @@ ul {
 .list.about {
   display: flex;
   gap: 30px;
+}
+
+.ben-bgr {
+  background-color: var(--team-background-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.icon-benefits {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .benefits-title {
@@ -266,6 +302,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .employee .item {
@@ -274,12 +311,93 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 3px 1px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
+/*  Іконки під командою */
+.socials.list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.element .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-cl);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.element .link:hover,
+.element .link:focus {
+  color: var(--main-background-color);
+  background-color: #2196f3;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Постійні клієнти */
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our-clients {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-cl);
+  border-radius: 4px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+}
+
+.clients-link .our-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-cl);
+  fill: currentColor;
+}
+
+.our-clients:hover,
+.our-clients:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
 
 /* footer */
 .footer {
   background-color: var(--dark-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  gap: 70px;
+  margin-right: auto;
+}
+
+.footer-flex {
+  display: flex;
+  gap: 70px;
+  align-content: space-around;
 }
 
 .footer .footer-link {
@@ -317,6 +435,48 @@ ul {
 .footer-addres:hover,
 .footer-addres:focus {
   color: var(--accent-color);
+}
+
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+  margin-bottom: 20px;
+}
+
+.join-list {
+  display: flex;
+  gap: 10px;
+}
+
+.join-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-background-color);
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-item:nth-child(2) {
+  background-color: var(--accent-color);
+}
+
+.join-item {
+  border-radius: 50%;
+}
+
+.adress .list {
+  display: inline;
 }
 
 /*portfolio  */
@@ -392,8 +552,3 @@ ul {
   border-right: 1px solid var(--border-potfolio-cl);
   border-left: 1px solid var(--border-potfolio-cl);
 }
-
-/* 0px 4px 4px rgba(0, 0, 0, 0.25),
-0px 1px 3px rgba(0, 0, 0, 0.10),
-0px 2px 1px rgba(0, 0, 0, 0.10),
-0px 2px 2px rgba(0, 0, 0, 0.12) */
